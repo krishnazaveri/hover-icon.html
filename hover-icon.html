@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main 
+        {
+            height: 80px;
+            width: 80px;
+            background: pink;
+            margin: 200px auto;
+            box-shadow: 5px 5px 10px grey ;
+            border: 5px solid white;
+            position: relative;
+            z-index: 1;
+
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .effect
+        {
+            height: 80px;
+            width: 80px;
+            background: lightblue;
+            transform: scale(0);
+            transition: .8s;
+
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+        }
+        .main:hover .effect 
+        {
+            transform: scale(1);
+        }
+
+        .fa-bag-shopping
+        {
+            color:darkviolet;
+            font-size: 25px;
+            transition: 1s;
+        }
+
+        .fa-bag-shopping:hover
+        {
+            color:red;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <div class="effect"></div>
+    </div>
+  
+    
+</body>
+</html>
